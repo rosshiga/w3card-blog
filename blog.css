@@ -1,0 +1,6 @@
+/*blog.css contains helper css not in W3.CSS*/
+
+/* The cards seemed too close with the 16px w3-margin*/
+.w3-margin-card {
+    margin: 24px !important
+}
