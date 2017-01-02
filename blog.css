@@ -1,6 +1,16 @@
 /*blog.css contains helper css not in W3.CSS*/
 
 /* The cards seemed too close with the 16px w3-margin*/
+@media screen and (max-width: 992px) {
+    #mobileNav {
+
+    }
+}
+
+@media screen and (min-width: 993px) {
+
+}
+
 .w3-margin-card {
     margin: 24px !important
 }
@@ -12,3 +22,9 @@
     margin-left: 24px !important
 }
 
+.w3-margin-mobileNav {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: 24px !important;
+    margin-left: 24px !important
+}
