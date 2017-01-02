@@ -9,10 +9,42 @@
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-green.css">
     <title>W3.CSS Blog</title>
     <link rel="stylesheet" href="blog.css">
+    <script src="navFrame.js"></script>
 </head>
 <body>
 <div class="w3-row">
-    <nav class="w3-col m5 l3 w3-container w3-hide-small">
+
+    <div class="w3-col m5 l3 w3-container w3-hide-small w3-collapse" id="navFrame">
+
+
+        <!--Nav card-->
+
+        <nav class="w3-card-12 w3-margin-card w3-center w3-theme-l1">
+            <br>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5">samffffple</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5">sampdddle</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5">ple</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5">sample</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5">sample</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5 w3-hide-medium w3-hide-large" onclick="closeNav()">X
+                    Close</a>
+            </div>
+            <br>
+
+        </nav>
+
+        <!--end Nav card-->
         <!--Author card-->
         <div class="w3-card-12 w3-margin-card ">
 
@@ -25,48 +57,28 @@
                 <h3>Ross Higa</h3>
             </header>
             <div class="w3-container w3-theme-l1">
-                <h6>Devloper and Photographer</h6>
+                <h6>Developer and Photographer</h6>
             </div>
         </div>
         <!--end Author card-->
 
-        <!--Nav card-->
-        <div class="w3-card-12 w3-margin-card w3-center w3-theme-l1">
-            <nav>
-                <br>
-                <div class="w3-container w3-butnav">
-                    <button class="w3-btn w3-round-xxlarge w3-theme-d5">sample</button>
-                </div>
-                <div class="w3-container w3-butnav">
-                    <button class="w3-btn w3-round-xxlarge w3-theme-d5">sample</button>
-                </div>
-                <div class="w3-container w3-butnav">
-                    <button class="w3-btn w3-round-xxlarge w3-theme-d5">sample</button>
-                </div>
-                <div class="w3-container w3-butnav">
-                    <button class="w3-btn w3-round-xxlarge w3-theme-d5">sample</button>
-                </div>
-                <div class="w3-container w3-butnav">
-                    <button class="w3-btn w3-round-xxlarge w3-theme-d5">sample</button>
-                </div>
-                <br>
 
-            </nav>
-        </div>
-        <!--end Nav card-->
-    </nav>
+    </div>
 
 
     <div class="w3-rest w3-container ">
+        <div class="w3-card-16 w3-margin-card w3-theme-d3" id="mobileNav">
+            <span class="w3-opennav w3-xlarge w3-hide-large w3-hide-medium" onclick="openNav()">&#9776;</span>
+        </div>
         <article class="w3-card-16 w3-margin-card w3-display-container">
             <header class="w3-container w3-theme-d3">
                 <h3>Title</h3>
             </header>
             <div class="w3-container">
-                <p>Content</p>
+                <p><a href="#" onclick="closeNav()" class="w3-closenav ">Close</a></p>
                 <img src="https://demo.rosshiga.com/media/Marderhund_(Nyctereutes_procyonoides).jpg"
                      style="width:128px;height:128px;" alt="Norway">
-                <p>content</p>
+                <p><a href="#" onclick="openNav()" class="w3-closenav ">open</a></p>
             </div>
             <div class="w3-container w3-theme-l1 w3-padding-12">
 
