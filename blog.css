@@ -19,7 +19,8 @@
     margin-top: auto !important;
     margin-bottom: 20px !important;
     margin-right: 24px !important;
-    margin-left: 24px !important
+    margin-left: 24px !important;
+    padding: 8px;
 }
 
 .w3-margin-mobileNav {
