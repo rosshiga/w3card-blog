@@ -15,3 +15,11 @@ function closeNav() {
     document.getElementById("mobileNav").style.display = "block";
 
 }
+
+
+function toggleCard(id){
+
+    document.getElementById(id).style.display = (document.getElementById(id).style.display == "none" ? "block" : "none");
+
+}
+
